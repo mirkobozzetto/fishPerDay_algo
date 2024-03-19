@@ -3,7 +3,7 @@ import { readFileSync } from "fs";
 const test = readFileSync("test.txt", "utf8");
 const final = readFileSync("final.txt", "utf8");
 
-const part1 = (data) => {
+const part2 = (data) => {
   const result = data.trim().split(",").map(Number);
   return result;
 };
@@ -23,6 +23,6 @@ const lines = (fish, days) => {
   return fishCounts.reduce((a, b) => a + b, 0);
 };
 
-const fish = part1(final);
+const fish = part2(final);
 const lastLine = lines(fish, 257);
 console.log(lastLine);
