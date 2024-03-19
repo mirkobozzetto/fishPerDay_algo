@@ -33,7 +33,7 @@ const countFish = (fish) => {
   return fish.length;
 };
 
-const fish = part1(test);
+const fish = part1(final);
 const lastLine = lines(fish, 81);
 console.log(countFish(lastLine));
 
